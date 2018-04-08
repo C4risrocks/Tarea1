@@ -2195,6 +2195,187 @@ void InitGL(GLvoid)     // Inicializamos parametros
 		
 		glFlush();
 	}
+
+	void sombraTuberia(void) {
+
+		colorRGB(129, 207, 17);
+		glPushMatrix();
+		glScalef(6, 11, 1);
+		poligono();
+		glPopMatrix();
+
+		colorRGB(1, 167, 1);
+
+		glTranslatef(-1.5, -5, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(-1, 1, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(-2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(1, 1, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(-1, 1, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(-2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(1, 1, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(-1, 1, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(-2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(1, 1, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(-1, 1, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(-2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(1, 1, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(-1, 1, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(-2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(1, 1, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+		glTranslatef(2, 0, 0);
+		glPushMatrix();
+		poligono();
+		glPopMatrix();
+
+	}
+
+	void tuberia(void) {
+
+		glColor3f(0, 0, 0);
+		glPushMatrix();
+		glScalef(28, 50, 1);
+		poligono();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(0, 32.5, 0);
+		glScalef(32, 15, 1);
+		poligono();
+		glPopMatrix();
+
+		colorRGB(1,167,1);
+
+		glPushMatrix();
+		glScalef(26, 48, 1);
+		poligono();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(0, 32.5, 0);
+		glScalef(30, 13, 1);
+		poligono();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(12, 31.5, 0);
+		sombraTuberia();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(10, 18.5, 0);
+		sombraTuberia();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(10, 8.5, 0);
+		sombraTuberia();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(10, -1.5, 0);
+		sombraTuberia();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(10, -11.5, 0);
+		sombraTuberia();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(10, -17.5, 0);
+		sombraTuberia();
+		glPopMatrix();
+
+	}
 	
 
 
@@ -2208,8 +2389,8 @@ void InitGL(GLvoid)     // Inicializamos parametros
 		glTranslatef(transX, transY,0);
 
 		//Poner Código Aquí.
-		glScalef(3, 3, 1);
-		orquito();
+		glScalef(2, 2, 1);
+		tuberia();
 	
 	}
 	void reshape(int width, int height)   // Creamos funcion Reshape
