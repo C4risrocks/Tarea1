@@ -32,11 +32,8 @@ void InitGL(GLvoid)     // Inicializamos parametros
 		float R, G, B;
 
 		R = rojo / 255;
-		printf("Color rojo R%d ,rojo %d\n", R,rojo);
 		G = verde/255;
-		printf("Color verde G%d,verde %d\n", G,verde);
 		B = azul/255;
-		printf("Color azul B%d ,azul %d\n", B,azul);
 		glColor3f(R, G, B);
 
 	}
@@ -2085,116 +2082,6 @@ void InitGL(GLvoid)     // Inicializamos parametros
 
 		glPopMatrix();
 	}
-	
-	void escenario(void) {
-
-		glPushMatrix();
-		glTranslatef(-80, -70, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(10, 0, 0.0);
-		piso();
-		glTranslatef(0, 10, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glTranslatef(-10, 0, 0.0);
-		piso();
-		glPopMatrix();
-
-		glPushMatrix();
-		modTab();
-		glTranslatef(24.5, 0, 0);
-		modTab();
-		glTranslated(24.5, 0, 0);
-		modTab();
-		glPopMatrix();
-
-		glPushMatrix();
-		glTranslated(12, 0, 0);
-		tab1();
-		glTranslated(24, 0, 0);
-		tab1();
-		glPopMatrix();
-
-		glPushMatrix();
-		glTranslated(24, 36, 0);
-		tab1();
-		glPopMatrix();
-
-		glPushMatrix();
-		glTranslated(-48, 0, 0);
-		tab1();
-		glPopMatrix();
-
-		glPushMatrix();
-		glTranslated(-70, -60, 0);
-		montania();
-		glTranslated(128, 0, 0);
-		montania();
-		glPopMatrix();
-
-		glPushMatrix();
-		glTranslated(24, -60, 0);
-		mario();
-		glPopMatrix();
-		
-		
-		glFlush();
-	}
 
 	void sombraTuberia(void) {
 
@@ -2327,7 +2214,7 @@ void InitGL(GLvoid)     // Inicializamos parametros
 		glScalef(28, 50, 1);
 		poligono();
 		glPopMatrix();
-		
+
 		//Sombra negra parte superior
 
 		glPushMatrix();
@@ -2336,7 +2223,7 @@ void InitGL(GLvoid)     // Inicializamos parametros
 		poligono();
 		glPopMatrix();
 
-		colorRGB(1,167,1);
+		colorRGB(1, 167, 1);
 
 		glPushMatrix();
 		glScalef(26, 48, 1);
@@ -2430,7 +2317,7 @@ void InitGL(GLvoid)     // Inicializamos parametros
 	void escalera1(void) {
 
 		tabiqueEscalera();
-		glTranslatef(16,0,0);
+		glTranslatef(16, 0, 0);
 		tabiqueEscalera();
 		glTranslatef(16, 0, 0);
 		tabiqueEscalera();
@@ -2586,7 +2473,7 @@ void InitGL(GLvoid)     // Inicializamos parametros
 		tabiqueEscalera();
 		glTranslatef(-16, 0, 0);
 		tabiqueEscalera();
-		
+
 		glTranslatef(16, 16, 0);
 		tabiqueEscalera();
 		glTranslatef(16, 0, 0);
@@ -2601,6 +2488,120 @@ void InitGL(GLvoid)     // Inicializamos parametros
 
 
 	}
+
+	
+	void escenario(void) {
+
+		tuberia();
+
+		glPushMatrix();
+		glTranslatef(-80, -70, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(10, 0, 0.0);
+		piso();
+		glTranslatef(0, 10, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glTranslatef(-10, 0, 0.0);
+		piso();
+		glPopMatrix();
+
+		glPushMatrix();
+		modTab();
+		glTranslatef(24.5, 0, 0);
+		modTab();
+		glTranslated(24.5, 0, 0);
+		modTab();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(12, 0, 0);
+		tab1();
+		glTranslated(24, 0, 0);
+		tab1();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(24, 36, 0);
+		tab1();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(-48, 0, 0);
+		tab1();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(-70, -60, 0);
+		montania();
+		glTranslated(128, 0, 0);
+		montania();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(24, -60, 0);
+		mario();
+		glPopMatrix();
+		
+		
+		glFlush();
+	}
+
 	
 
 
@@ -2614,7 +2615,7 @@ void InitGL(GLvoid)     // Inicializamos parametros
 		glTranslatef(transX, transY,0);
 
 		//Poner Código Aquí.
-		escalera4();
+		escenario();
 	
 	}
 	void reshape(int width, int height)   // Creamos funcion Reshape

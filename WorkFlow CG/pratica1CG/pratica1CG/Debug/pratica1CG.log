@@ -1,8 +1,2 @@
 ﻿  main.cpp
-c:\users\c4ris\documents\github\tarea1\workflow cg\pratica1cg\pratica1cg\main.cpp(35): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-c:\users\c4ris\documents\github\tarea1\workflow cg\pratica1cg\pratica1cg\main.cpp(35): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'double'
-c:\users\c4ris\documents\github\tarea1\workflow cg\pratica1cg\pratica1cg\main.cpp(37): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-c:\users\c4ris\documents\github\tarea1\workflow cg\pratica1cg\pratica1cg\main.cpp(37): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'double'
-c:\users\c4ris\documents\github\tarea1\workflow cg\pratica1cg\pratica1cg\main.cpp(39): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'double'
-c:\users\c4ris\documents\github\tarea1\workflow cg\pratica1cg\pratica1cg\main.cpp(39): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'double'
   pratica1CG.vcxproj -> C:\Users\c4ris\Documents\GitHub\Tarea1\WorkFlow CG\pratica1CG\Debug\pratica1CG.exe
