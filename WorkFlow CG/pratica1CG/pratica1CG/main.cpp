@@ -2320,11 +2320,15 @@ void InitGL(GLvoid)     // Inicializamos parametros
 
 	void tuberia(void) {
 
+		//Sombra negra Base------
+
 		glColor3f(0, 0, 0);
 		glPushMatrix();
 		glScalef(28, 50, 1);
 		poligono();
 		glPopMatrix();
+		
+		//Sombra negra parte superior
 
 		glPushMatrix();
 		glTranslatef(0, 32.5, 0);
@@ -2375,6 +2379,227 @@ void InitGL(GLvoid)     // Inicializamos parametros
 		sombraTuberia();
 		glPopMatrix();
 
+		//Reflejos luz
+
+		colorRGB(129, 207, 17);
+		glPushMatrix();
+		glTranslatef(-11.5, 0, 0);
+		glScalef(3, 48, 1);
+		poligono();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(-13.5, 31.5, 0);
+		glScalef(3, 11, 1);
+		poligono();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(-7, 32, 0);
+		glScalef(6, 12, 1);
+		poligono();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(0, 38.5, 0);
+		glScalef(30, 1, 1);
+		poligono();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(-2, 31.5, 0);
+		glScalef(2, 11, 1);
+		poligono();
+		glPopMatrix();
+
+		colorRGB(129, 207, 17);
+		glPushMatrix();
+		glTranslatef(-5.5, 0, 0);
+		glScalef(5, 48, 1);
+		poligono();
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslatef(0, 31.5, 0);
+		glScalef(2, 11, 1);
+		poligono();
+		glPopMatrix();
+
+	}
+
+	void escalera1(void) {
+
+		tabiqueEscalera();
+		glTranslatef(16,0,0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(0, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(16, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(0, 16, 0);
+		tabiqueEscalera();
+
+
+	}
+
+	void escalera2(void) {
+
+		glRotatef(270, 0, 0, 1);
+		escalera1();
+
+	}
+
+	void escalera3(void) {
+
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(0, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(16, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(0, 16, 0);
+		tabiqueEscalera();
+
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(0, -16, 0);
+		tabiqueEscalera();
+		glTranslatef(0, -16, 0);
+		tabiqueEscalera();
+		glTranslatef(0, -16, 0);
+		tabiqueEscalera();
+
+	}
+
+	//Escalera del final
+
+	void escalera4(void) {
+
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(0, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(16, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(0, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(16, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+
+
+		glTranslatef(0, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+		
+		glTranslatef(16, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+		glTranslatef(16, 0, 0);
+		tabiqueEscalera();
+
+		glTranslatef(0, 16, 0);
+		tabiqueEscalera();
+		glTranslatef(-16, 0, 0);
+		tabiqueEscalera();
+
+
 	}
 	
 
@@ -2389,8 +2614,7 @@ void InitGL(GLvoid)     // Inicializamos parametros
 		glTranslatef(transX, transY,0);
 
 		//Poner Código Aquí.
-		glScalef(2, 2, 1);
-		tuberia();
+		escalera4();
 	
 	}
 	void reshape(int width, int height)   // Creamos funcion Reshape
