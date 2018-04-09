@@ -13,6 +13,7 @@
 //segundo tramo 15
 
 float transX, transY = 0;
+int zoom = 1;
 
 void InitGL(GLvoid)     // Inicializamos parametros
 {
@@ -2492,6 +2493,8 @@ void InitGL(GLvoid)     // Inicializamos parametros
 	
 	void escenario(void) {
 
+		glScalef(zoom, zoom, 1);
+
 		tuberia();
 
 		glPushMatrix();
@@ -2645,11 +2648,13 @@ void keyboard(unsigned char key, int x, int y)
 	{
 
 	case 'w':
+		break;
 	case 'W':
 		transY += 5;
 		printf("Posicion en Y: %f\n", transY);
 		break;
 	case 's':
+		break;
 	case 'S':
 		transY -= 5;
 		printf("Posicion en Y: %f\n", transY);
@@ -2661,6 +2666,12 @@ void keyboard(unsigned char key, int x, int y)
 	case 'd':
 	case 'D':
 		transX += 5;
+		break;
+	case 'r':
+		zoom += 1;
+		break;
+	case 'f':
+		zoom -= 1;
 		break;
 	case 27: exit(0);
 		break;
